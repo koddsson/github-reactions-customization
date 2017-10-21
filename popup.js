@@ -7,8 +7,6 @@ const originalEmojis = {
   '❤️': '❤️'
 }
 
-//chrome.storage.sync.set({ emojis: originalEmojis });
-
 // Fetch the set emojis and set them if they have been customized
 chrome.storage.sync.get("emojis", function(items) {
   if (!chrome.runtime.error) {
