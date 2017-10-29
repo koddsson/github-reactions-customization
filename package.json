@@ -4,7 +4,7 @@
   "description": "",
   "main": "content.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"There currently no tests\"",
     "publish": "webstore upload --source extension/ --auto-publish --extension-id jcfanjlmclkfjlackppodpgidmjphech"
   },
   "repository": {
