@@ -5,9 +5,7 @@
   "main": "content.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish:zip": "zip extension.zip content.js manifest.json popup.html popup.js",
-    "publish:upload": "webstore upload --source extension.zip --extension-id $EXTENSION_ID --client-id $CLIENT_ID --client-secret $CLIENT_SECRET --refresh-token $REFRESH_TOKEN",
-    "publish": "npm run publish:zip && npm run publish:upload"
+    "publish": "webstore upload --source extension/ --auto-publish --extension-id jcfanjlmclkfjlackppodpgidmjphech"
   },
   "repository": {
     "type": "git",
