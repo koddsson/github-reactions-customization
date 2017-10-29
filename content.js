@@ -1,8 +1,16 @@
-let emojiReplacements = null;
+let emojiReplacements = {
+  '👍': '👍',
+  '👎': '👎',
+  '😄': '😄',
+  '🎉': '🎉',
+  '😕': '😕',
+  '❤️': '❤️'
+};
+
 // Read this from `chrome.storage.sync`
 chrome.storage.sync.get("emojis", function(items) {
   if (!chrome.runtime.error) {
-		emojiReplacements = items.emojis;
+		Object.assign(emojiReplacements, items.emojis)
 
 		// Loop the first time over all the emojis and change the markup to be how we want it
   	const allEmojis = document.querySelectorAll('.emoji')
